@@ -1,0 +1,27 @@
+.home {
+    text-align: center;
+    padding: 80px 20px;
+    background: #e9f4fb;
+}
+
+.home h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.home .btn {
+    background: #1a4f7c;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 4px;
+    text-decoration: none;
+}
+
+.home .btn:hover {
+    background: #14507a;
+}
+
+img {
+    height: 300px;
+    width: 600px;
+}
