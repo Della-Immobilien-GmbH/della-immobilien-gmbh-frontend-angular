@@ -1,0 +1,40 @@
+name: Build and Deploy Full App
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Angular Frontend
+        uses: actions/checkout@v4
+        with:
+          path: frontend
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Install & Build Angular
+        working-directory: frontend
+        run: |
+          npm ci
+          npm run build -- --configuration production
+
+      - name: Push to Fullstack Repo
+        run: |
+          git config --global user.name "github-actions"
+          git config --global user.email "actions@github.com"
+          git clone https://x-access-token:${{ secrets.GH_TOKEN }}@github.com/Della-Immobilien-GmbH/della-immobilien-gmbh-fullstack.git out
+          mkdir -p out/public
+          find out/public -mindepth 1 ! -name 'index.php' -exec rm -rf {} +
+          cp -r frontend/dist/*/browser/* out/public/
+          cd out
+          git add .
+          git commit -m "Deploy from 'della-immobilien-gmbh-frontend-angular' repo $GITHUB_SHA" || echo "No changes to commit"
+          git push
