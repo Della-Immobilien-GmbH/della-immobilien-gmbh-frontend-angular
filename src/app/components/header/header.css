@@ -23,6 +23,12 @@ nav ul {
     padding: 0;
 }
 
+@media (max-width: 550px) {
+    nav {
+        display: none;
+    }
+}
+
 nav ul li a {
     text-decoration: none;
     color: #333;
