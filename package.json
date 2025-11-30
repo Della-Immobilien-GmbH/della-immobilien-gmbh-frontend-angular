@@ -6,7 +6,8 @@
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "serve:ssr:della-immobilien-gmbh-frontend": "node dist/della-immobilien-gmbh-frontend/server/server.mjs"
   },
   "prettier": {
     "printWidth": 100,
