@@ -1,6 +1,9 @@
+* {
+    font-family: Arial, sans-serif;
+}
+
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
     background-color: #f9fcff;
     color: #333;
     line-height: 1.6;
