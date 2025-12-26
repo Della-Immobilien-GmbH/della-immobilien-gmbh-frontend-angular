@@ -1,12 +1,12 @@
 section {
     text-align: center;
-    padding: 80px 20px;
+    padding: 5rem 2rem;
     background: var(--background-emphasis);
 }
 
 h1 {
-    font-size: 28px;
-    margin-bottom: 20px;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
 }
 
 .btn {
