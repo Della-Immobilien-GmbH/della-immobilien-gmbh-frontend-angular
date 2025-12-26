@@ -1,0 +1,47 @@
+* {
+    box-sizing: border-box;
+}
+
+form {
+    margin: 0 auto;
+    background: var(--background-secondary);
+    max-width: 60rem;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    text-align: left;
+}
+
+h3 {
+    border-bottom: 1px solid var(--della-gradient-blue);
+    padding-bottom: 0.5rem;
+    margin-top: 1.5rem;
+    text-align: center;
+}
+
+label {
+    display: block;
+    margin-left: 0.5rem;
+    margin-top: 1rem;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 0.75rem;
+    margin-top: 0.5rem;
+    border-radius: 0.5rem;
+    border: 1px solid var(--della-gradient-blue);
+    background: var(--della-light-blue);
+}
+
+textarea {
+    resize: none;
+}
+
+button {
+    margin-top: 1.5rem;
+    width: 100%;
+    cursor: pointer;
+    font-weight: bold;
+}

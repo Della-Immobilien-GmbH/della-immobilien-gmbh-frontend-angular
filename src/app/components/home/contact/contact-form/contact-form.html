@@ -1,0 +1,25 @@
+<form #form (ngSubmit)="submit(form)">
+    <h3>Ihre Kontaktdaten</h3>
+
+    <label for="name">Ihr Name</label>
+    <input type="text" id="name" name="name" placeholder="Max Mustermann" required>
+
+    <label for="email">Ihre E-Mail-Adresse</label>
+    <input type="email" id="email" name="email" placeholder="max@mail.de" required>
+
+    <label for="phone">Telefonnummer (optional)</label>
+    <input type="tel" id="phone" name="phone" placeholder="Für eine schnelle Kontaktaufnahme">
+
+    <h3>Informationen zum Vorhaben</h3>
+
+    <label for="owner">Name des Interessenten</label>
+    <input type="text" id="owner" name="owner" placeholder="Wem soll die Immobilie gehören?">
+
+    <label for="address">Adresse / Flurstück</label>
+    <input type="text" id="address" name="address" placeholder="Wo befindet sich das geplante Projekt?">
+
+    <label for="message">Zusätzliche Informationen</label>
+    <textarea id="message" name="message" rows="4" placeholder="Informationen zu Gegebenheiten"></textarea>
+
+    <button type="submit" class="btn">Anfrage absenden</button>
+</form>
