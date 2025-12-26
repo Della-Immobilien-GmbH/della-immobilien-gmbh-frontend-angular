@@ -1,7 +1,7 @@
 .home {
     text-align: center;
     padding: 80px 20px;
-    background: var(--della-light-blue);
+    background: var(--background-emphasis);
 }
 
 .home h1 {
