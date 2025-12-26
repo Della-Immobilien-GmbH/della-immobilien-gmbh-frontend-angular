@@ -1,9 +1,9 @@
-.contact {
+section {
     padding: 60px 20px;
     text-align: center;
 }
 
-.contact iframe {
+iframe {
     margin-top: 20px;
     border-radius: 8px;
     border: 0;
