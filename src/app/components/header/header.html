@@ -5,20 +5,25 @@
         </a>
     </div>
 
-    <nav>
-        <ul>
-            <li>
-                <a href="#home">Startseite</a>
-            </li>
-            <li>
-                <a href="#about">Über uns</a>
-            </li>
-            <li>
-                <a href="#services">Leistungen</a>
-            </li>
-            <li>
-                <a href="#contact">Kontakt</a>
-            </li>
-        </ul>
-    </nav>
+    <div class="nav-container">
+        <a href="javascript:void(0);" class="icon" (click)="toggleNav()">
+            <fa-icon [icon]="faBars" />
+        </a>
+        <nav #nav>
+            <ul>
+                <li>
+                    <a href="#home">Startseite</a>
+                </li>
+                <li>
+                    <a href="#about">Über uns</a>
+                </li>
+                <li>
+                    <a href="#services">Leistungen</a>
+                </li>
+                <li>
+                    <a href="#contact">Kontakt</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
 </header>
