@@ -9,18 +9,6 @@ h1 {
     margin-bottom: 1.5rem;
 }
 
-.btn {
-    background: var(--della-blue);
-    color: white;
-    padding: 12px 24px;
-    border-radius: 4px;
-    text-decoration: none;
-}
-
-.btn:hover {
-    background: var(--della-gradient-blue);
-}
-
 img {
     height: 300px;
     width: 600px;
