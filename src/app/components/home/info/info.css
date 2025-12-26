@@ -1,7 +1,7 @@
 .home {
     text-align: center;
     padding: 80px 20px;
-    background: #e9f4fb;
+    background: var(--della-light-blue);
 }
 
 .home h1 {
@@ -10,7 +10,7 @@
 }
 
 .home .btn {
-    background: #1a4f7c;
+    background: var(--della-blue);
     color: white;
     padding: 12px 24px;
     border-radius: 4px;
@@ -18,7 +18,7 @@
 }
 
 .home .btn:hover {
-    background: #14507a;
+    background: var(--della-gradient-blue);
 }
 
 img {

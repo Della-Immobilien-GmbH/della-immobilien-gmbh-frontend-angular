@@ -1,14 +1,23 @@
+:root {
+    --della-blue: #1a4f7c;
+    --della-gradient-blue: #14507a;
+    --della-light-blue: #e9f4fb;
+    --light-gray: #f9fcff;
+    --medium-gray: #ddd;
+    --dark-gray: #333;
+}
+
 * {
     font-family: Arial, sans-serif;
 }
 
 body {
     margin: 0;
-    background-color: #f9fcff;
-    color: #333;
+    background-color: var(--light-gray);
+    color: var(--dark-gray);
     line-height: 1.6;
 }
 
 h1, h2, h3 {
-    color: #1a4f7c;
+    color: var(--della-blue);
 }

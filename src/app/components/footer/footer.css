@@ -1,5 +1,5 @@
 footer {
-    background: #1a4f7c;
+    background: var(--della-blue);
     color: white;
     text-align: center;
     padding: 15px;
