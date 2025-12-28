@@ -1,8 +1,9 @@
-import { Component, signal } from '@angular/core';
+import { Component } from '@angular/core';
+import { ContactForm } from "./contact-form/contact-form";
 
 @Component({
   selector: 'app-contact',
-  imports: [],
+  imports: [ContactForm],
   templateUrl: './contact.html',
   styleUrl: './contact.css'
 })

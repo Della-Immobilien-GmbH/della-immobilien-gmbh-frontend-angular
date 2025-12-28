@@ -1,0 +1,120 @@
+.container {
+    position: relative;
+}
+
+section {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    max-width: 60rem;
+    height: 100%;
+    background-color: var(--background-secondary);
+    opacity: 60%;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+
+.flex {
+    display: flex;
+}
+
+/*
+taken from: https://codepen.io/tfevan/pen/wvPeLOL
+*/
+
+@supports (animation: grow .5s cubic-bezier(.25, .25, .25, 1) forwards) {
+     .tick {
+        stroke-opacity: 0;
+        stroke-dasharray: 29px;
+        stroke-dashoffset: 29px;
+        animation: draw .5s cubic-bezier(.25, .25, .25, 1) forwards;
+        animation-delay: .6s
+    }
+
+    .circle {
+        fill-opacity: 0;
+        stroke: #219a00;
+        stroke-width: 16px;
+        transform-origin: center;
+        transform: scale(0);
+        animation: grow 1s cubic-bezier(.25, .25, .25, 1.25) forwards;   
+    }   
+}
+
+@keyframes grow {
+    60% {
+        transform: scale(.8);
+        stroke-width: 4px;
+        fill-opacity: 0;
+    }
+    100% {
+        transform: scale(.9);
+        stroke-width: 8px;
+        fill-opacity: 1;
+        fill: #219a00;
+    }
+}
+
+@keyframes draw {
+    0%, 100% { stroke-opacity: 1; }
+    100% { stroke-dashoffset: 0; }
+}
+
+/*
+end taken from
+*/
+
+* {
+    box-sizing: border-box;
+}
+
+form {
+    margin: 0 auto;
+    background: var(--background-secondary);
+    max-width: 60rem;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    text-align: left;
+    position: relative;
+    z-index: 1;
+}
+
+h3 {
+    border-bottom: 1px solid var(--della-gradient-blue);
+    padding-bottom: 0.5rem;
+    margin-top: 1.5rem;
+    text-align: center;
+}
+
+label {
+    display: block;
+    margin-left: 0.5rem;
+    margin-top: 1rem;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 0.75rem;
+    margin-top: 0.5rem;
+    border-radius: 0.5rem;
+    border: 1px solid var(--della-gradient-blue);
+    background: var(--della-light-blue);
+}
+
+textarea {
+    resize: none;
+}
+
+button {
+    margin-top: 1.5rem;
+    width: 100%;
+    cursor: pointer;
+    font-weight: bold;
+}

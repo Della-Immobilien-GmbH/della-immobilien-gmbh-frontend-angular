@@ -1,10 +1,10 @@
-.contact {
-    padding: 60px 20px;
+section {
+    padding: 4rem 2rem;
     text-align: center;
 }
 
-.contact iframe {
-    margin-top: 20px;
-    border-radius: 8px;
+iframe {
+    margin-top: 1.5rem;
+    border-radius: 0.5rem;
     border: 0;
 }

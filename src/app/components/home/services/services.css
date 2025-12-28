@@ -1,20 +1,20 @@
-.services {
-    background: white;
-    padding: 60px 20px;
+section {
+    background: var(--background-secondary);
+    padding: 4rem 2rem;
     text-align: center;
 }
 
 .service-box {
     display: flex;
     justify-content: center;
-    gap: 40px;
+    gap: 3rem;
     flex-wrap: wrap;
 }
 
 .service-box div {
-    max-width: 250px;
-    padding: 20px;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    background: #f9fcff;
+    width: 16rem;
+    padding: 1rem;
+    border: 1px solid var(--medium-gray);
+    border-radius: 0.5rem;
+    background: var(--background-primary);
 }
