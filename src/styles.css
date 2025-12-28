@@ -5,6 +5,7 @@
     --light-gray: #f9fcff;
     --medium-gray: #ddd;
     --dark-gray: #333;
+    --error-red: #B00020;
 
     --background-primary: var(--light-gray);
     --background-secondary: white;

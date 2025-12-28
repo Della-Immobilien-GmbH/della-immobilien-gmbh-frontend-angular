@@ -19,6 +19,13 @@ section {
     display: none;
 }
 
+section p {
+    text-align: center;
+    font-size: xx-large;
+    color: var(--error-red);
+    opacity: 100%;
+}
+
 .flex {
     display: flex;
 }
