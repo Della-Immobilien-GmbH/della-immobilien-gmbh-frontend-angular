@@ -21,7 +21,8 @@ export class ContactForm implements OnDestroy {
     this.sendMailSubscription?.unsubscribe();
   }
 
-  protected submit(form: HTMLFormElement) {
+  protected submit(event: Event) {
+    const form = event.target as HTMLFormElement;
     const data = new FormData(form);
 
     this.sendMailSubscription = this.httpClient.post(`${environment.apiUrl}/send-mail`, data).subscribe({

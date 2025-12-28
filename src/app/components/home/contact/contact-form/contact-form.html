@@ -11,7 +11,7 @@
         <p>Ein Fehler ist aufgetreten. Bitte versuchen Sie es später erneut.</p>
     </section>
 
-    <form #form (ngSubmit)="submit(form)">
+    <form (ngSubmit)="submit($event)">
         <h3>Ihre Kontaktdaten</h3>
 
         <label for="name">Ihr Name</label>
