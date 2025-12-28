@@ -22,6 +22,8 @@ export class ContactForm implements OnDestroy {
   }
 
   protected submit(event: Event) {
+    event.preventDefault();
+    
     const form = event.target as HTMLFormElement;
     const data = new FormData(form);
 
